@@ -18,7 +18,7 @@
 </head>
 <body>
   <!-- This is the preloader -->
-  <div class="slidecontainer">
+  <div id="slidecontainer" class="bg-light d-flex justify-content-center align-content-center vh-auto vw-auto">
     <div class="slideuptext">
       <ul>
         <li class="text-1 text">I Am Carl James</li>
@@ -36,7 +36,7 @@
     </div>
   </div>
    <!-- This is the navbar -->
-   <nav class="navbar  navbar-expand-lg navbar-light bg-light sticky-top">
+   <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand fs-4" href="./index.html">&#169;Code By Carl</a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -73,84 +73,89 @@
             </div>
     </nav>
 
-        <!-- This is the main -->
-        <div class="circle1"></div>
-        <main
-        class="d-flex flex-column align-items-center justify-content-center text-center vw-100">
-        <h1 class="display-1">Carl James</h1>
-        <p class="typing">Aspring Fullstack Developer</p>
-        
-      </main>
-    
-    <section id="About">
-      <h2>About</h2>
+<!-- This is the main -->
+
+<Main>
+<section id="Landing"
+        class="d-flex flex-column align-items-center justify-content-center text-center vw-25">
+          <h1 class="display-1">Carl James</h1>
+          <p class="typing">Aspiring  Fullstack Developer</p>
+          <div class="circle1"> </div> 
+      </section>    
+    <section id="About" class="vh-100 bg-secondary text-white">
+      <div class="container">
+        <h2 class="d-flex justify-content-center">About</h2>
+        <h3>Few things about me</h3>
+        <p>Hello, Im Carl James, an aspiring developer.Currently Im learning development at Life Choices Acdemy.Before Life Choices I lived in America for 3 years. Im passionate about design and enjoy sloving problems.
+          Im always looking to upskill myself.
+          When im not working. Im Working on my Business. I love to travel and enjoy various types of food also different culutres.
+        </p>
+      </div>
     </section>
     <section id="History">
       <h2>History</h2>
     </section>
-    <section id="Education">
+    <section id="Education"class="vh-100 bg-secondary text-white">
       <h2>Education</h2>
     </section>
     <section id="Skills">
       <h2>Skills</h2>
     </section>
-    <section id="Projects">
+    <section id="Projects" class="vh-100 bg-secondary text-white">
       <h2>Projects</h2>
     </section>
     <section id="Testimonial">
       <h2>Testimonial</h2>
     </section>
-    <!-- <section id="Contact" class="bg-danger-subtle">
+    <section id="Contact" class= "bg-secondary text-white">
       <div class="container bg-danger">
         <div class="row">
           <div class="col">
             <p>left</p>
           </div>
-
+          
 
           <div class="col">
-
+            
             <form id="contact_form" name="contact_form" method="post">
-                <div class="mb-5 row">
-                    <div class="col">
-                        <label>First Name</label>
-                        <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
-                    </div>
-                    <div class="col">
-                        <label>Last Name</label>
-                        <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
-                    </div>
+              <div class="mb-5 row">
+                <div class="col">
+                  <label>First Name</label>
+                  <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
                 </div>
-                <div class="mb-5 row">
-                    <div class="col">
-                        <label for="email_addr">Email</label>
-                        <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="col">
-                        <label for="phone_input">Phone</label>
-                        <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
-                            placeholder="Phone">
-                    </div>
+                <div class="col">
+                  <label>Last Name</label>
+                  <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
                 </div>
-                <div class="mb-5">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+              <div class="mb-5 row">
+                <div class="col">
+                  <label for="email_addr">Email</label>
+                  <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                  placeholder="name@example.com">
                 </div>
-                <button type="submit" class="btn btn-primary px-4 btn-lg">Submit</button>
+                <div class="col">
+                  <label for="phone_input">Phone</label>
+                  <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                  placeholder="Phone">
+                </div>
+              </div>
+              <div class="mb-5">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary px-4 btn-lg">Submit</button>
             </form>
           </div>
-
           
-      </div>
-    </section> -->
+          
+        </div>
+      </section>
+    </Main> 
 
     <footer>
-      Copyright Carl
+        Copyright Carl
     </footer>
-    
-
-  <footer></footer>
 <!-- This is bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
