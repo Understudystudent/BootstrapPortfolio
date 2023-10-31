@@ -25,7 +25,6 @@ body {
   justify-content: center;
   animation: slide-up-container 8s;
   animation-fill-mode: forwards;
-  
 }
 
 .slideuptext{
