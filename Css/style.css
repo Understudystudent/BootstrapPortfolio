@@ -179,3 +179,46 @@ body {
 .navbar-toggler.collapsed .toggler-icon {
   background-color: red;
 }
+/* This is the Main */
+
+main {
+  /* background: url(https://i.postimg.cc/zD7xY2kQ/183087752-2916473088572410-7134720571068052053-n.jpg); */
+  background-size: contain;
+  background-image: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.circle1 {
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+.circle1{
+  bottom: 10%;
+  position: absolute;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 30s;
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% { 
+    left: calc(100% - 100px); 
+   }
+  100% {
+    left: 0;     
+  }
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
