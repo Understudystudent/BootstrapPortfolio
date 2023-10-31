@@ -16,13 +16,7 @@ body {
 } 
 
 /* This is the Preloader Slide */
-.slidecontainer {
-  height: 100vh;
-  width: 100%;
-  background: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#slidecontainer {
   animation: slide-up-container 8s;
   animation-fill-mode: forwards;
 }
@@ -35,7 +29,7 @@ body {
 .text {
   font-family: "Helvetica";
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
   list-style: none;
 }
 
@@ -197,14 +191,14 @@ main {
 
 }
 
-.circle1{
-  bottom: 1%;
+.circle1  {
+  top: 85%;
   position: absolute;
-  -webkit-animation: linear infinite;
-  -webkit-animation-name: run;
-  -webkit-animation-duration: 30s;
+  animation: linear infinite;
+  animation-name: ball;
+  animation-duration: 30s;
 }
-@-webkit-keyframes run {
+@keyframes ball {
   0% {
     left: 0;
   }
