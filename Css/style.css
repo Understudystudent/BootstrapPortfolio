@@ -1,277 +1,218 @@
 /* universal selector */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* --black-b-color: #10100e;
-    --gray-d3-color: #191815;
-    --gray-d2-color: #30302b;
-    --gray-d1-color: #606055;
-    --gray-b-color: #c0c0ab;
-    --gray-l1-color: #e8e8cf;
-    --gray-l2-color: #f8f8dd;
-    --white-b-color: #FFFFE3;
-    --theme-b-color: #FFFFE3; */
-    *,
-    *::after,
-    *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-      /* font-family: */
-      margin: 0;
-      padding: 0;
-      width: 100%;
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  animation-delay: 9s;
+} 
+
+/* This is the Preloader Slide */
+#slidecontainer {
+  animation: slide-up-container 8s;
+  animation-fill-mode: forwards;
+}
+
+.slideuptext{
+  color: silver;
+  position: absolute;
+}
+
+.text {
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 3rem;
+  list-style: none;
+}
+
+@keyframes slide-up-container {
+  0%,50%{
       height: 100vh;
-    } 
-    
-    /* This is the Preloader Slide */
-    #slidecontainer {
-      background-color: #ffffff;
-      animation: slide-up-container 8s;
-      animation-fill-mode: forwards;
-    }
-    
-    .slideuptext{
-      color: silver;
-      position: absolute;
-    }
-    
-    .text {
-      font-family: sans-serif;  
-      font-weight: bold;
-      font-size: 48px;
-      list-style: none;
-      letter-spacing: .03rem;
-    }
-    
-    @keyframes slide-up-container {
-      0%,50%{
-          height: 100vh;
-      }
-    
-      100% {
-          height: 0%;
-      }
-    }
-    
-    /* This is the prelaoder text */
-    
-    .text:nth-child(odd){
-      color: black;
-    }
-    
-    @keyframes blink-animation {
-      0%, 100%{
-          opacity: 0%;
-      }
-      1%, 99%  {
-          opacity: 100%;
-      } 
-    }
-    
-    .text-1 {
-      animation: blink-animation 1s linear 0.9s, blink-animation 1s linear 2s;
-      opacity: 0;
-    }
-    
-    .text-2 {
-      animation: blink-animation 1s linear 0.8s, blink-animation 1s linear 2.1s;
-      opacity: 0;
-    }
-    
-    .text-3 {
-      animation: blink-animation 1s linear 0.7s, blink-animation 1s linear 2.2s;
-      opacity: 0;
-    }
-    
-    .text-4 {
-      animation: blink-animation 1s linear 0.6s, blink-animation 1s linear 2.3s;
-      opacity: 0;
-    }
-    
-    .text-5 {
-      animation: blink-animation 1s linear 0.5s, blink-animation 1s linear 2.4s;
-      opacity: 0;
-    }
-    
-    .text-6 {
-      color: #887d1a;
-      animation: blink-animation 1s linear 0.4s, blink-animation 1s linear 2.5s, slide-out 1s linear 3.2s;
-      opacity: 0;
-    }
-    
-    .text-7 { 
-      animation: blink-animation 1s linear 0.5s, blink-animation 1s linear 2.4s;
-      opacity: 0;
-    }
-    
-    .text-8 {
-      animation: blink-animation 1s linear 0.6s, blink-animation 1s linear 2.3s;
-      opacity: 0;
-    }
-    
-    .text-9 {
-      animation: blink-animation 1s linear 0.7s, blink-animation 1s linear 2.2s;
-      opacity: 0;
-    }
-    
-    .text-10 {
-      animation: blink-animation 1s linear 0.8s, blink-animation 1s linear 2.1s;
-      opacity: 0;
-    }
-    
-    .text-11 {
-      animation: blink-animation 1s linear 0.9s, blink-animation 1s linear 2s;
-      opacity: 0;
-    }
-    
-    @keyframes slide-out {
-      0%, 20%, 39%, 60%, 79% {
-          opacity: 0%;
-      }
-      1%,19%, 40%,59%{
-          opacity: 100%;
-      }
-    }
-    
-    /* Burger Menu */
-    .toggler-icon{
-      width: 30px;
-      height: 3px;
-      background-color: blue;
-      display: block;
-      transition: all 0.2s;
-    }
-    
-    
-    .middle-bar{
-      margin: 5px auto;
-    }
-    
-    /* Open Burger */
-    .navbar-toggler .top-bar {
-      transform: rotate(45deg);
-      transform-origin: 10% 10%;
-    }
-    
-    .navbar-toggler .middle-bar {
-      opacity: 0;
-      filter: alpha(opacity=0);
-    }
-    
-    .navbar-toggler .bottom-bar {
-      transform: rotate(-45deg);
-      transform-origin: 10% 90%;
-    }
-    /* Open Burger */
-    
-    /* When its an X */
-    .navbar-toggler.collapsed .top-bar {
-      transform: rotate(0);
-    }
-    
-    .navbar-toggler.collapsed .middle-bar {
-      opacity: 1;
-      filter: alpha(opacity=100);
-    }
-    
-    .navbar-toggler.collapsed .bottom-bar {
-      transform: rotate(0);
-    }
-    /* When its an X */
-    
-    /* Color of Toggler when collapsed */
-    .navbar-toggler.collapsed .toggler-icon {
-      background-color: red;
-    }
-    /* This is the Main */
-    
-    main {
-      /* background: url(https://i.postimg.cc/zD7xY2kQ/183087752-2916473088572410-7134720571068052053-n.jpg); */
-      background-size: contain;
-      background-image: no-repeat;
-      background-position: center;
-      height: 100vh;
-    }
-    h2{
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.3rem;
-      font-size: 77px;
-    
-    }
-    h3 {
-      font-weight: 600;
-      letter-spacing: 0.3rem;
-      font-size: 44px;
-    }
-    #Landing,#Projects{
-      background-color: #0e0e0e;
-    }
-    
-    /* this is the ball animation */
-    .circle1 {
-      background-color: grey;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-    
-    }
-    
-    .circle1  {
-      top: 85%;
-      position: absolute;
-      animation: linear infinite;
-      animation-name: ball;
-      animation-duration: 30s;
-    }
-    @keyframes ball {
-      0% {
-        left: 0;
-      }
-      50% { 
-        left: calc(100% - 100px); 
-       }
-      100% {
-        left: 0;     
-      }
-    }
-    
-    section {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    /* this is the skill slide animation */
-    
-    
-    /* Contact Me Section */
-    /* #Contact {
-      width: 100%;
-      height: 100%;
-    
-    }
-    .span {
-      color: #999D9E;
-      font-weight: 450;
-      font-family: 'Dennis Sans', sans-serif;
-      font-size: 4rem;
-      text-transform: uppercase;
-      display: inline-block;
-      animation: marquee-animation 80s linear infinite;
-    }
-    
-    @keyframes marquee-animation {
-    
-      0% {
-        transform: translate(0,0);
-      }
-      
-      100% {
-        transform: translate(-100%,0);
-      }
-      
-    } */
+  }
+
+  100% {
+      height: 0%;
+  }
+}
+
+/* This is the prelaoder text */
+
+.text:nth-child(odd){
+  color: black;
+}
+
+@keyframes blink-animation {
+  0%, 100%{
+      opacity: 0%;
+  }
+  1%, 99%  {
+      opacity: 100%;
+  } 
+}
+
+.text-1 {
+  animation: blink-animation 1s linear 0.9s, blink-animation 1s linear 2s;
+  opacity: 0;
+}
+
+.text-2 {
+  animation: blink-animation 1s linear 0.8s, blink-animation 1s linear 2.1s;
+  opacity: 0;
+}
+
+.text-3 {
+  animation: blink-animation 1s linear 0.7s, blink-animation 1s linear 2.2s;
+  opacity: 0;
+}
+
+.text-4 {
+  animation: blink-animation 1s linear 0.6s, blink-animation 1s linear 2.3s;
+  opacity: 0;
+}
+
+.text-5 {
+  animation: blink-animation 1s linear 0.5s, blink-animation 1s linear 2.4s;
+  opacity: 0;
+}
+
+.text-6 {
+  color: red;
+  animation: blink-animation 1s linear 0.4s, blink-animation 1s linear 2.5s, slide-out 1s linear 3.2s;
+  opacity: 0;
+}
+
+.text-7 { 
+  animation: blink-animation 1s linear 0.5s, blink-animation 1s linear 2.4s;
+  opacity: 0;
+}
+
+.text-8 {
+  animation: blink-animation 1s linear 0.6s, blink-animation 1s linear 2.3s;
+  opacity: 0;
+}
+
+.text-9 {
+  animation: blink-animation 1s linear 0.7s, blink-animation 1s linear 2.2s;
+  opacity: 0;
+}
+
+.text-10 {
+  animation: blink-animation 1s linear 0.8s, blink-animation 1s linear 2.1s;
+  opacity: 0;
+}
+
+.text-11 {
+  animation: blink-animation 1s linear 0.9s, blink-animation 1s linear 2s;
+  opacity: 0;
+}
+
+@keyframes slide-out {
+  0%, 20%, 39%, 60%, 79% {
+      opacity: 0%;
+  }
+  1%,19%, 40%,59%{
+      opacity: 100%;
+  }
+}
+
+/* Burger Menu */
+.toggler-icon{
+  width: 30px;
+  height: 3px;
+  background-color: blue;
+  display: block;
+  transition: all 0.2s;
+}
+
+
+.middle-bar{
+  margin: 5px auto;
+}
+
+/* Open Burger */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+/* Open Burger */
+
+/* When its an X */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* When its an X */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: red;
+}
+/* This is the Main */
+
+main {
+  /* background: url(https://i.postimg.cc/zD7xY2kQ/183087752-2916473088572410-7134720571068052053-n.jpg); */
+  background-size: contain;
+  background-image: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+/* Moving ball animation */
+.circle1 {
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+.circle1  {
+  top: 85%;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: ball;
+  animation-duration: 30s;
+}
+@keyframes ball {
+  0% {
+    left: 0;
+  }
+  50% { 
+    left: calc(100% - 100px); 
+   }
+  100% {
+    left: 0;     
+  }
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
