@@ -178,16 +178,7 @@ body {
 .navbar-toggler.collapsed .toggler-icon {
   background-color: red;
 }
-/* This is the Main */
-
-main {
-  /* background: url(https://i.postimg.cc/zD7xY2kQ/183087752-2916473088572410-7134720571068052053-n.jpg); */
-  background-size: contain;
-  background-image: no-repeat;
-  background-position: center;
-  height: 100vh;
-}
-
+/* this is the moving name animation */
 .circle1  {
   top: 85%;
   position: absolute;
@@ -211,7 +202,6 @@ main {
 }
 
 section {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
