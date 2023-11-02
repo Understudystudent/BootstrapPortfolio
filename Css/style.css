@@ -15,6 +15,11 @@ body {
   animation-delay: 9s;
 } 
 
+/* This is the colour Section */
+#History, #Skills , #Testimonial, #Contact{
+  background-color: #e5e7eb;
+}
+
 /* This is the Preloader Slide */
 #slidecontainer {
   animation: slide-up-container 8s;
