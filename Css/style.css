@@ -207,6 +207,19 @@ section {
   align-items: center;
 }
 
+/* Projects */
+
+.card {
+
+  display: grid;
+  
+  grid-template-columns: auto;
+  
+  grid-auto-rows: auto;
+  
+  grid-gap: 1rem;
+  
+  }
 
 /* Testimonal Section */
 #testimonial {
