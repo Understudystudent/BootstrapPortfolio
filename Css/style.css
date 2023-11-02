@@ -207,6 +207,14 @@ section {
   align-items: center;
 }
 
+/* Project Section */
+
+.card{
+  display: grid;
+  grid-template-columns: auto ;
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+} 
 
 /* Testimonal Section */
 #testimonial {
