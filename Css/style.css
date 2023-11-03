@@ -189,14 +189,14 @@ a {
 /* this is the moving name animation */
 .circle1  {
   text-transform: uppercase;
-  top: 30%;
+  bottom: 70%;
   position: relative;
   display:hidden;
   animation: linear infinite;
   animation-name: ball;
-  animation-duration: 30s;
+  animation-duration: 40s;
   font-weight: 600;
-  width: 140%;
+  width: 800px;
   height: fit-content;
   font-size: 120px;
   text-wrap: nowrap;
@@ -209,7 +209,7 @@ a {
     left: 0;
   }
   50% { 
-    left: calc(100% - 1500px);  
+    left: calc(100% - 900px);  
    }
   100% {
     left: 0;     
@@ -224,17 +224,7 @@ section {
 
 /* Projects */
 
-.card {
 
-  display: grid;
-  
-  grid-template-columns: auto;
-  
-  grid-auto-rows: auto;
-  
-  grid-gap: 1rem;
-  
-  }
 
 /* Testimonal Section */
 #Testimonial {
@@ -362,7 +352,7 @@ main.row {
 
 .box h4{
   position: relative;
-  color: #ccc;
+  color: #000000;
 }
 
 .box h3 {
